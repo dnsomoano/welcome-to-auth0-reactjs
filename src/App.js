@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Auth from "./Auth/Auth.js";
 
 class App extends Component {
   render() {
+    const auth = new Auth();
+    auth.login();
     return (
       <div className="App">
         <header className="App-header">
