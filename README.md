@@ -14,7 +14,7 @@ We have been chatting about the idea of `authentication` and `authorization` for
 ### Explorer Mode
 
 - [x] Using either React or Vue, create a new front-end application that uses Auth0 as the user provider. No backend is needed for this.
-- [ ] Display the name, or email, and the user Id to the user after they log in.
+- [x] Display the name, or email, and the user Id to the user after they log in.
 
 #### Tips:
 

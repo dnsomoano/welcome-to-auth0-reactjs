@@ -18,8 +18,8 @@ class Dashboard extends Component {
       auth.getProfile((err, profile) => {
         this.setState({
           authed: {
-            isLoggedIn: true
-            // profile
+            isLoggedIn: true,
+            profile
           }
         });
       });
@@ -35,22 +35,39 @@ class Dashboard extends Component {
   };
 
   render() {
-    let button = <h3>bubble</h3>;
+    let button = <section>Loading...</section>;
 
     if (this.state.authed.isLoggedIn) {
       button = (
-        <h3>
-          Welcome {this.state.authed.profile}!
-          <a onClick={this.logout} className="logout-button">
-            not you?
-          </a>
-        </h3>
+        <section>
+          <section className="account-info">
+            <section className="account-box">
+              <img
+                className="profile-picture"
+                src={this.state.authed.profile.picture}
+                alt={this.state.authed.profile.nickname}
+              />
+              <section className="account-name">
+                Welcome {this.state.authed.profile.name}!
+                <a onClick={this.logout} className="logout-button">
+                  not you?
+                </a>
+              </section>
+            </section>
+          </section>
+        </section>
       );
     }
     return (
       <div>
         {button}
-        <section>Your information is below:</section>
+        {/* <section>Your information is below:</section> */}
+        {/* <img
+          src={this.state.authed.profile.picture}
+          alt={this.state.authed.profile.nickname}
+        />
+        <header>{this.state.authed.profile.nickname}</header>
+        <header>{this.state.authed.profile.name}</header> */}
       </div>
     );
   }

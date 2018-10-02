@@ -23,6 +23,45 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dashboard */
+.account-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+
+.account-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #999999;
+  border: 1px outset #222222;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  max-width: 30em;
+}
+
+.profile-picture {
+  border: 1px solid #222222;
+  border-radius: 0.3em;
+  margin: 0.2em;
+  height: 4em;
+  width: 4em;
+}
+
+.account-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.logout-button {
+  font-size: 1.5em;
 }
