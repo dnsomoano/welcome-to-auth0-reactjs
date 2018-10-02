@@ -40,7 +40,7 @@ class Dashboard extends Component {
     if (this.state.authed.isLoggedIn) {
       button = (
         <h3>
-          Welcome {this.state.authed.profile.given_name}!
+          Welcome {this.state.authed.profile}!
           <a onClick={this.logout} className="logout-button">
             not you?
           </a>

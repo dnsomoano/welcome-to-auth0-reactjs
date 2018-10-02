@@ -17,7 +17,6 @@ const handleAuthentication = (nextState, replace) => {
 };
 class App extends Component {
   render() {
-    auth.login();
     return (
       <Router history={history}>
         <div className="App">

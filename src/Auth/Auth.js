@@ -7,7 +7,7 @@ export default class Auth {
     clientID: "n6_B9084Tt0QczAYWBtRRWjg875QtlIZ",
     redirectUri: "http://localhost:3000/callback",
     responseType: "token id_token",
-    scope: "openid"
+    scope: "openid profile"
   });
 
   constructor() {
