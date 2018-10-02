@@ -32,6 +32,11 @@ class Dashboard extends Component {
 
   logout = () => {
     auth.logout();
+    // this.setState({
+    //   authed: {
+    //     isLoggedIn: false
+    //   }
+    // });
   };
 
   render() {
@@ -49,9 +54,9 @@ class Dashboard extends Component {
               />
               <section className="account-name">
                 Welcome {this.state.authed.profile.name}!
-                <a onClick={this.logout} className="logout-button">
+                <button onClick={this.logout} className="logout-button">
                   not you?
-                </a>
+                </button>
               </section>
             </section>
           </section>
